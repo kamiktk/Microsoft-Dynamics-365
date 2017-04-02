@@ -1,0 +1,131 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=9;IE=8">
+
+    <script src="/WebResources/ClientGlobalContext.js.aspx" type="text/javascript" charset="UTF-8"></script>
+    <script src="Scripts/jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="Scripts/SDKMetadata.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="Scripts/knockout.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="Scripts/CommonUtils.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="Scripts/getFetchXmlResults.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="datagrid/js/datagrideditable.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="Scripts/MultiEntitySearch.js" type="text/javascript" charset="UTF-8"></script>
+
+    <link href="datagrid/css/datagrideditable.min.css" rel="stylesheet" />
+    <link href="Styles/CEM.css" rel="stylesheet" />
+    <style type="text/css">
+        #container {
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: left;
+            margin: 0 auto;
+        }
+
+        .center {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="divAlert" id="divAlert" style="display: none;">
+        <img id="imgAlert" src="../msdyn_/Controls/ExtJS/css/images/window/toast/icon16_info.png">
+        <span class="spanAlertMessage" id="spanAlertMessage"></span>
+    </div>
+    <div class="mtb10" id="Selection Criteria">
+        <span class="fs18" id="spTitle">Selection Criteria</span>
+    </div>
+    <div class="mtb5" id="searchDiv">
+        <div class="radio_options">
+            <label>
+                <input id="chkPerson" name="SearchEntity" type="checkbox" />
+                Person</label>
+            <label>
+                <input id="chkOrganization" name="SearchEntity" type="checkbox" />
+                Organization</label>
+            <!--<button class="po_button" id="btnNewPerson" type="button">NEW PERSON</button>-->
+        </div>
+    </div>
+    <div id="container">
+        <div class="left">
+            <table>
+                <tr>
+                    <td>Last/Org Name</td>
+                    <td>
+                        <input id="txtLastOrgName" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input id="txtFirstName" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Middle Name</td>
+                    <td>
+                        <input id="txtMiddleName" autofocus="autofocus" type="text"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="center">
+            <table>
+                <tr>
+                    <td>Street 1</td>
+                    <td>
+                        <input id="txtStreet1" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <input id="txtCity" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>State/Province</td>
+                    <td>
+                        <input id="txtStateProvince" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Zip/Postal Code</td>
+                    <td>
+                        <input id="txtZip" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select id="ddlCountry" style="width: 171px"></select></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="right">
+            <table>
+                <tr>
+                    <td>Primary ID</td>
+                    <td>
+                        <input id="txtPrimaryId" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Alternate ID</td>
+                    <td>
+                        <input id="txtAlternateId" autofocus="autofocus" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Alternate ID Type</td>
+                    <td>
+                        <select id="ddlAlternateIdType" style="width: 100%"></select>
+                </tr>
+            </table>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="po_divDlgFooter" style="height: auto;">
+            <button class="po_button" id="btnSearch" type="button" style="margin-top: 0px; height: auto;">SEARCH</button>
+        </div>
+        <div id="divResultsGrid" style="height: 246px; overflow-x: auto;"></div>
+
+    </div>
+</body>
+</html>

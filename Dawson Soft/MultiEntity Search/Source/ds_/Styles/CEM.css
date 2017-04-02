@@ -1,0 +1,1074 @@
+body {
+    min-width: 410px;
+    color: #666666;
+    font-size: 9pt;
+    font-family: Segoe UI Light, Segoe UI, Tahoma, Arial;
+    font-weight: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding:0 10px;
+}
+
+.h1Title {
+    color: #262626;
+    font-family: Segoe UI,Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 20px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 0px 24px 0px;
+    white-space: nowrap;
+}
+
+.h2Title {
+    color: #262626;
+    font-family: Segoe UI,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 20px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 0px 8px 0px;
+    white-space: nowrap;
+}
+
+.divFloatLeft {
+    float: left;
+}
+
+/***********************************
+ * Error/warning bar
+ ***********************************/
+
+.divAlert {
+    background-color: #fff19d;
+    padding: 7px 8px 3px 8px;
+    border: 1px solid #dddddd;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.spanAlertMessage {
+    color: #666666;
+    font-size: 11px;
+    padding-left: 8px;
+    vertical-align: top;
+}
+
+
+/***********************************
+ * Sections ("tabs")
+ ***********************************/
+
+.divSectionTitle {
+    font-size: 21px;
+    font-weight: normal;
+    padding: 8px 8px 8px 0px;
+}
+
+.aSectionTitle {
+    cursor: pointer;
+    color: #666666;
+    text-decoration: none;
+}
+
+.divCollapsible {
+    padding-right: 8px;
+}
+
+
+/***********************************
+ * Tab pages
+ ***********************************/
+
+.po_divTabControl {
+    padding-bottom: 0px;
+}
+
+.po_ulTabs {
+    padding-left: 4px;
+    margin: 0px 0px -1px 0px;
+}
+
+    .po_ulTabs li {
+        list-style: none;
+        display: inline;
+    }
+
+    .po_ulTabs a {
+        padding: 4px 10px 6px 10px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 9pt;
+        font-weight: bold;
+        background-color: white;
+        color: #23272c;
+        border-top-color: #b6babf;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-left-color: #b6babf;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-right-color: #b6babf;
+        border-right-style: solid;
+        border-right-width: 1px;
+    }
+
+        .po_ulTabs a.inactive {
+            padding-bottom: 5px;
+            color: #6c6e70;
+            font-weight: normal;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+
+            .po_ulTabs a.inactive:hover {
+                color: #23272c;
+                border-top-color: #d3d6d9;
+                border-left-color: #d3d6d9;
+                border-right-color: #d3d6d9;
+            }
+
+.po_divTab {
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left-color: #b6babf;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-color: #b6babf;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: #b6babf;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: #b6babf;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 8px;
+}
+
+
+/***********************************
+ * Modal dialogs
+ ***********************************/
+
+.po_divModalBackground {
+    display: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 20;
+    background-color: #808080;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* IE8 */
+}
+
+.po_divDlg {
+    display: hidden;
+    position: absolute;
+    width: 540px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -270px;
+    background-color: white;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0 0 1em black;
+    text-align: left;
+    z-index: 101;
+    color: #3b3b3b;
+    font-family: Segoe UI,Tahoma,Arial;
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* IE8 */
+}
+
+.po_divDlgHeader {
+    padding: 10px 0px;
+}
+
+.po_aCloseButton {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 16px;
+    width: 16px;
+    border: none;
+}
+
+.po_divDlgTitle {
+    font-family: Segoe UI Light,Segoe UI,Tahoma,Arial;
+    font-size: 27px;
+    font-weight: 100;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.po_imgCloseButton {
+    height: 16px;
+    width: 16px;
+    border: none;
+}
+
+.po_divDlgBody {
+    color: #464646;
+    font-size: 12px;
+    overflow-y: auto;
+    margin: 0px 30px 15px 30px;
+    padding-right: 5px;
+}
+
+.po_divDlgFooter {
+    width: 100%;
+    height: 44px;
+    text-align: right;
+    background-color: #f8f8f8;
+}
+
+.po_divDlgButtons {
+    padding: 0px 30px;
+}
+
+.po_button {
+    height: 24px;
+    width: auto;
+    margin-left: 8px;
+    margin-top: 10px;
+    min-width: 80px;
+    overflow: visible;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    cursor: pointer;
+    font-family: Segoe UI,Tahoma,Arial;
+    font-size: 11px;
+    color: #000000;
+    direction: ltr;
+    text-align: center;
+    line-height: 16px;
+}
+
+    .po_button:hover {
+        background-color: #b1d6f0;
+    }
+
+    .po_button[disabled] {
+        color: #c6c6c6;
+    }
+
+    .po_button:hover[disabled] {
+        background-color: white;
+    }
+
+.po_divDlgWait {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#po_divDlgWaitBackground {
+    z-index: 102;
+    background-color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* IE8 */
+}
+
+#po_divDlgWaitImage {
+    z-index: 103;
+}
+
+.po_buttonInline {
+    height: 24px;
+    width: auto;
+    margin-left: 8px;
+    min-width: 80px;
+    overflow: visible;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    cursor: pointer;
+    font-family: Segoe UI,Tahoma,Arial;
+    font-size: 11px;
+    color: #000000;
+    direction: ltr;
+    text-align: center;
+    line-height: 16px;
+}
+
+    .po_buttonInline:hover {
+        background-color: #b1d6f0;
+    }
+
+/***********************************
+ * Columns of Controls
+ ***********************************/
+
+.tblControls {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0px 2px;
+    border-collapse: separate;
+    text-indent: 0;
+}
+
+    .tblControls tbody {
+        display: table-row-group;
+        vertical-align: middle;
+    }
+
+    .tblControls tr {
+        height: 24px;
+    }
+
+    .tblControls td {
+        display: table-cell;
+    }
+
+.tdControlLabel_L {
+    width: 90px;
+    padding-right: 6px;
+    padding-left: 0px;
+    padding-top: 3px;
+}
+
+.tdControlLabel_R {
+    width: 90px;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+.tdWideControlLabel_L {
+    width: 130px;
+    padding-right: 6px;
+    padding-left: 0px;
+    padding-top: 3px;
+}
+
+.tdWideControlLabel_R {
+    width: 220px;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+.tdControl {
+    padding-right: 7px;
+    padding-left: 0px;
+}
+
+    .tdControl input {
+        height: 17px;
+    }
+
+.label {
+    text-align: left;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    line-height: 17px;
+}
+
+.inpControl {
+    width: 100%;
+    color: #000000;
+    text-align: start;
+    overflow: hidden;
+    font-family: Segoe UI,Tahoma,Arial;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+}
+
+.tdErrorIcon {
+    width: 16px;
+    padding-top: 3px;
+}
+
+.spField, .inpField {
+    width: 100%;
+    color: #000000;
+    text-align: start;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+}
+
+.inpTextField:focus {
+    outline: none;
+}
+
+.tdFieldSelect {
+    width: 24px;
+    padding-left: 10px;
+}
+
+
+.borderNone {
+    border: none;
+}
+
+
+.cp_divToolbar {
+    margin: 0px 0px 10px 0px;
+    height: 22px;
+}
+
+.cp_ulToolbar {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    list-style-position: outside;
+    overflow-y: hidden;
+}
+
+    .cp_ulToolbar li {
+        height: 20px;
+        float: left;
+    }
+
+        .cp_ulToolbar li span {
+            color: #444444;
+            font-weight: normal;
+            height: 16px;
+            vertical-align: top;
+            padding-right: 4px;
+            padding-left: 5px;
+            padding-bottom: 4px;
+        }
+
+.cp_liItem {
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+    .cp_liItem:hover {
+        background-color: #d7ebf9;
+    }
+
+
+
+.displayNone {
+    display: none;
+}
+
+
+.requiredIndicator {
+    font-size: 14px;
+    font-weight: 600;
+    color: red;
+}
+
+.colorblack {
+    color: black;
+}
+
+.fs11 {
+    font-size: 11px;
+}
+
+.fs12 {
+    font-size: 12px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs18 {
+    font-size: 27px;
+    font-weight: 100;
+    color:#262626;
+}
+
+.tblLable {
+    font-weight: 700;
+    font-size: 11px;
+    color: #444;
+}
+select {
+    border: solid 1px #c6c6c6;
+    color: #000000;
+}
+input[type=text] {
+    border: solid 1px #c6c6c6;
+    height: 20px;
+}
+
+
+.mtb5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mtb10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mtb8 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ml0 {
+    margin-left: 0px;
+}
+
+.pad0 {
+    padding: 0px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.wh16 {
+    width: 16px;
+    height: 16px;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.curPointer {
+    cursor: pointer !important;
+}
+
+.mergBg {
+    background: transparent url(../ds_/Images/ribbonhomepage.png) no-repeat scroll -477px -145px;
+}
+
+.txtAlignCenter {
+    text-align: center;
+}
+
+.lrmarg30 {
+    margin: 0px 30px;
+}
+
+.posRelative {
+    position: relative;
+}
+
+.loaderDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.loaderDivCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -18px;
+}
+
+.ofHidden {
+    overflow: hidden;
+}
+
+
+
+
+#divPreferences {
+    /*border-top-color: #d6d6d6;
+    border-top-width: 1px;
+    border-top-style: solid;*/
+}
+
+#pfSaveBtn {
+    margin-bottom: 6px;
+}
+
+
+.top50 {
+    top: 50% !important;
+}
+
+.padRight0 {
+    padding-right: 0px !important;
+}
+
+.padl8 {
+    padding-left: 8px !important;
+}
+
+.padr8 {
+    padding-right: 8px !important;
+}
+
+
+.padb10 {
+    padding-bottom: 10px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.lookupIcon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.looupImgDiv {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-width: 0px 0px 0px 1px;
+    border-color: #b6babf;
+    border-style: solid;
+    text-align: center;
+    width: 32px;
+    background-color: #f8f8f8;
+}
+
+.inpFieldAbsol {
+    border: none !important;
+    position: absolute;
+    left: 0;
+    right: 32px;
+    top: 0;
+    bottom: 0;
+}
+
+.taResizeNone {
+    resize: none;
+    overflow: auto;
+}
+
+
+#delegatedContactDiv {
+    border-width: 1px;
+    border-color: #b6babf;
+    border-style: solid;
+    height: 25px;
+}
+
+/***********************************
+ * Toolbar
+ ***********************************/
+
+.po_divToolbar {
+    margin: 10px 0px 10px 0px;
+    height: 22px;
+}
+
+.po_ulToolbar {
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    list-style-position: outside;
+    overflow-y: hidden;
+}
+
+    .po_ulToolbar li {
+        height: 15px;
+        float: left;
+    }
+
+.po_liTBItem {
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+    .po_liTBItem:hover {
+        background-color: #d7ebf9;
+    }
+
+.po_liTBSeparator {
+    padding-right: 0px;
+    padding-left: 7px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+.po_ulToolbar li span {
+    font-size: 12px;
+    color: #000000;
+    height: 16px;
+    vertical-align: top;
+    padding-right: 4px;
+    padding-left: 0px;
+    padding-bottom: 4px;
+}
+
+/*****************************
+*Call Categories
+************************************/
+
+#wfCTContainer {
+    overflow: auto;
+    border: 1px solid;
+}
+
+#wfCategories {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.wfCategoryItem {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+    font-weight: bold;
+    display: table;
+}
+
+
+#wfTasks {
+    float: left;
+    width: 70%;
+    overflow: auto;
+    height: 100%;
+}
+
+.wfTasksContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.wfTaskItem {
+    float: left;
+    height: 100px;
+    text-align: center;
+    margin: 10px 20px;
+    border: 1px solid;
+    display: table;
+}
+
+.wfCenterAlign {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wfCategorySelItem {
+    border-right-width: 0px;
+    background-color: white;
+}
+
+/***********************************
+ * GuidedCall Flow
+ ***********************************/
+.cfLookupDivText {
+    position: absolute;
+    left: 0;
+    right: 25px;
+    top: 0;
+    bottom: 0;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+.cfLookupDivIconContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    border-left: solid 1px #b6babf;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.cfLookupDivIcon {
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+#cfContainer {
+    overflow: auto;
+    border: 1px solid;
+    position: relative;
+}
+
+.cfStepItem {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+    font-weight: bold;
+    display: table;
+}
+
+.cfStepSelItem {
+    border-right-width: 0px;
+}
+
+.cfStepEnabledItem {
+    background-color: white;
+}
+
+.lookupDiv {
+    border-width: 1px;
+    border-color: #b6babf;
+    border-style: solid;
+    height: 25px;
+    position: relative;
+    width: 100%;
+}
+
+.cfAnswerTypeUl {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.cfQuestion {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 40px;
+    right: 200px;
+    float: left;
+}
+
+.cfCancel {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    right: 200px;
+}
+
+.cfQToolTip {
+    position: absolute;
+    right: 0;
+    width: 180px;
+    border-left: 1px;
+    border-left-style: solid;
+    height: 100%;
+    padding-left: 5px;
+}
+
+.cfSteps {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    float: left;
+    width: 200px;
+    background-color: #f8f8f8;
+}
+
+.cfQuestions {
+    position: absolute;
+    left: 220px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.cfQuestionDiv {
+    width: 100%;
+    /*min-height:150px;*/
+    height: 100%;
+}
+
+.questionDiv {
+    padding: 10px 0px;
+}
+
+.answerTypeDiv {
+    padding: 10px 0px;
+}
+
+.spToolTip {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navaigationDiv {
+    padding: 10px 0px;
+}
+
+
+
+
+/***********************************
+ * Toolbar
+ ***********************************/
+
+.divToolbar {
+    margin: 0px 0px 6px 0px;
+    height: 22px;
+}
+
+
+/***********************************
+ * Tiles
+ ***********************************/
+
+.divTitleTileBlock {
+    height: 45px;
+}
+
+.divTileWrapper {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 42px;
+}
+
+.divTileWrapperInline {
+    float: right;
+    height: 42px;
+}
+
+.divTile, .divTileWide {
+    background-color: #f4d89d;
+    height: 42px;
+    float: left;
+    overflow: hidden;
+    border: none;
+    margin-left: 4px;
+}
+
+.divTile {
+    width: 120px;
+}
+
+.divTileWide {
+    width: 170px;
+}
+
+    .divTile:hover, .divTileWide:hover {
+        background-color: #e9ac30;
+    }
+
+.divTileTitle {
+    margin: 4px 0px 0px 7px;
+    color: #444444;
+    font-size: 11px;
+}
+
+.divTileValue {
+    margin: 2px 0px 0px 7px;
+    color: #000000;
+    font-size: 15px;
+}
+
+
+/***********************************
+ * Header information for a grid
+ ***********************************/
+
+.divGridSection {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #b6babf;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.divGridLabel {
+    font-size: 16px;
+}
+
+.spHeaderTitle {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/****************************
+ * Date input control
+ ****************************/
+
+.tblDateControl {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #a9a9a9;
+}
+
+.tdDateSpacer {
+    width: 6px;
+}
+
+.tblDateControl .inpControl {
+    width: 100%;
+    color: #000000;
+    text-align: start;
+    overflow: hidden;
+    font-family: Segoe UI,Tahoma,Arial;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-right: 2px;
+    border: none;
+}
+
+.tblDateControl td {
+    padding: 0px;
+}
+
+.tdDateCalButton {
+    width: 42px;
+    border: 1px solid #a9a9a9;
+    padding: 0px;
+}
+
+.divDateCalButton {
+    width: 40px;
+    height: 100%;
+    padding-top: 2px;
+    border: none;
+    margin: 1px;
+}
+
+    .divDateCalButton:hover {
+        margin: 0px;
+        border: 1px solid #859cc2;
+    }
